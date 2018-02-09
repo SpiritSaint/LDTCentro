@@ -92,5 +92,5 @@
         <variable name="MAX_STORE" value="2" />
     </plugin>
     <engine name="android" spec="^6.2.3" />
-    <engine name="ios" spec="4.5.4" />
+    <engine name="ios" spec="~4.4.0" />
 </widget>
