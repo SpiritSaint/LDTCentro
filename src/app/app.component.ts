@@ -15,6 +15,8 @@ import { DolciPage } from '../pages/dolci/dolci';
 import { BarPage } from '../pages/bar/bar';
 import { CopasPage } from '../pages/copas/copas';
 
+declare var codePush: any;
+
 
 @Component({
   templateUrl: 'app.html'
@@ -51,6 +53,10 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       StatusBar.styleDefault();
       Splashscreen.hide();
+      this.platform.resume.subscribe(() =>
+        codePush.sync());
+
+
     });
   }
 
