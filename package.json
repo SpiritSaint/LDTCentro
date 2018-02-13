@@ -75,7 +75,8 @@
             "cordova-plugin-appcenter-push": {}
         },
         "platforms": [
-            "android"
+            "android",
+            "ios"
         ]
     }
 }
